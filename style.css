@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@300&family=Open+Sans:ital,wght@1,500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(248, 87, 12);
+  min-width: 100vh;
+  min-width: 100vw;
+}
+.container {
+  width: 1600px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.conteudo {
+  width: 800px;
+  height: 650px;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+aside {
+  width: 300px;
+  font-family: "Rubik", sans-serif;
+  font-size: 45px;
+  padding-left: 15px;
+}
+main {
+  display: flex;
+  width: 500px;
+  font-family: "Mukta", sans-serif;
+  font-weight: bold;
+}
+
+.perguntas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+#q1,
+#q2,
+#q3,
+#q4,
+#q5 {
+  width: 490px;
+  height: 80px;
+  border-left: rgb(211, 195, 195) 3px solid;
+  border-right: rgb(211, 195, 195) 3px solid;
+  border-bottom: rgb(211, 195, 195) 3px solid;
+  border-radius: 10px;
+  position: relative;
+  padding: 5px;
+}
+.perguntas #bt-q1,
+#bt-q2,
+#bt-q3,
+#bt-q4,
+#bt-q5 {
+  position: absolute;
+  top: 0;
+  left: 180px;
+  margin-top: 5px;
+  width: 28px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: black;
+  color: rgb(248, 87, 12);
+}
+#bt-q2 {
+  position: absolute;
+  top: 0;
+  margin-top: 2px;
+  left: 180px;
+  width: 28px;
+  height: 25px;
+  border-radius: 20px;
+  background-color: black;
+  color: rgb(248, 87, 12);
+}
+.pr1,
+.pr2,
+.pr3,
+.pr4,
+.pr5 {
+  font-family: "Mukta", sans-serif;
+
+  font-size: 11px;
+}
+
+@media (width: 768px) {
+  body {
+  }
+  .container {
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 100vw;
+  }
+  .conteudo {
+    width: 600px;
+    margin-left: 400px;
+    height: 550px;
+  }
+  #q1,
+  #q2,
+  #q3,
+  #q4,
+  #q5 {
+    width: 400px;
+  }
+  aside {
+    font-size: 30px;
+  }
+}
